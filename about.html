@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- Указывает, что документ использует HTML5 -->
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Устанавливает кодировку UTF-8 для поддержки русских символов -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Обеспечивает адаптивную вёрстку для мобильных устройств -->
+  <title>О Нас | Sweet Crumbs</title>
+
+  <!-- Подключение CSS-файла со стилями сайта -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Подключение шрифта Playfair Display с Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Шапка сайта с логотипом и навигацией -->
+<header class="topbar">
+  <div class="logo">Sweet <span>Crumbs</span></div>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html" class="active">О Нас</a>
+  </nav>
+</header>
+
+<!-- Основной контент страницы -->
+<main style="padding: 4rem 2rem; max-width: 900px; margin: 0 auto; font-family: 'Playfair Display', serif; line-height: 1.8;">
+
+  <!-- Блок "Наша Команда" -->
+  <section id="our-team" style="margin-bottom: 4rem;">
+    <h2>Наша Команда</h2>
+    <!-- Изображение команды -->
+    <img src="images/team.jpg" alt="Наша команда Sweet Crumbs" style="width: 100%; border-radius: 1rem; margin: 1.5rem 0;">
+    <p>
+      Наша команда — это сердце Sweet Crumbs. Это пекари, которые начинают свой день до рассвета,
+      чтобы всё было готово к вашему утру. Это бариста, знающие ваш любимый напиток. Это люди,
+      объединённые любовью к делу, к людям и к вкусной еде.
+    </p>
+  </section>
+
+  <!-- Блок "О Нас" -->
+  <section id="about-us" style="margin-bottom: 4rem;">
+    <h2>О Нас</h2>
+    <p>
+      Sweet Crumbs — это больше, чем просто пекарня. Это уютное место, где аромат свежей выпечки и тёплого кофе
+      наполняет пространство, а каждый гость чувствует себя как дома. Мы открылись с мечтой дарить радость
+      и вкусные моменты каждому посетителю.
+    </p>
+  </section>
+
+  <!-- Блок "Наша История" -->
+  <section id="our-story" style="margin-bottom: 4rem;">
+    <h2>Наша История</h2>
+    <p>
+      История Sweet Crumbs началась с девочки, которая мечтала открыть собственную пекарню в Санкт-Петербурге.
+      Её вдохновляли французские булочные, домашнее печенье бабушки и волшебство раннего утра с чашкой латте.
+      Годы обучения, путешествий и упорства сделали эту мечту реальностью. Сегодня Sweet Crumbs —
+      это команда людей, разделяющих ту же страсть.
+    </p>
+  </section>
+
+  <!-- Блок "Наша Миссия" -->
+  <section id="our-mission" style="margin-bottom: 4rem;">
+    <h2>Наша Миссия</h2>
+    <p>
+      Мы стремимся создавать вкусную, честную и красивую выпечку из качественных ингредиентов.
+      Наша цель — не просто продавать продукты, а дарить моменты уюта, вдохновения и тепла каждому,
+      кто заходит к нам на огонёк.
+    </p>
+  </section>
+
+  <!-- Блок "Наша Выпечка" -->
+  <section id="our-pastries" style="margin-bottom: 4rem;">
+    <h2>Наша Выпечка</h2>
+    <!-- Изображение выпечки -->
+    <img src="images/pastries.jpg" alt="Пирожные" style="width: 100%; border-radius: 1rem; margin-top: 1rem;">
+    <p>
+      От классических круассанов до авторских тартов — всё в нашей витрине сделано вручную и с любовью.
+      Мы печем каждое утро, чтобы вы могли наслаждаться свежестью, хрустом и ароматом настоящей выпечки,
+      как во Франции.
+    </p>
+  </section>
+
+  <!-- Блок "Наш Кофе" -->
+  <section id="our-coffee" style="margin-bottom: 4rem;">
+    <h2>Наш Кофе</h2>
+    <p>
+      Наши бариста варят кофе, который подчеркнёт вкус десертов и подарит ощущение уюта.
+      Мы используем только отборные зерна и любим играть с авторскими напитками, чтобы каждый нашёл что-то своё —
+      от классического эспрессо до матча латте.
+    </p>
+    <!-- Изображение кофе -->
+    <img src="images/coffee.jpg" alt="Кофе" style="width: 100%; border-radius: 1rem; margin-top: 1rem;">
+  </section>
+
+</main>
+
+<!-- Подвал сайта с формой подписки и контактной информацией -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Форма подписки на рассылку -->
+    <div class="newsletter">
+      <h3>Рассылка</h3>
+      <p>Подпишитесь, чтобы быть в курсе всех новинок от Sweet Crumbs.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <label for="email">Email *</label>
+        <input type="email" id="email" placeholder="Введите ваш email" required>
+        <div class="checkbox-group">
+          <input type="checkbox" id="consent" required>
+          <label for="consent">Да, я хочу подписаться на рассылку *</label>
+        </div>
+        <button type="submit">Подписаться</button>
+      </form>
+    </div>
+
+    <!-- Контактная информация -->
+    <div class="contact">
+      <h3>Связаться с нами</h3>
+      <p>
+        +7 (000) 123-45-67<br>
+        info@sweetcrumbs.ru
+      </p>
+      <p>
+        ул. Франциско, 500<br>
+        Санкт-Петербург, Россия
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Нижняя строка подвала с копирайтом -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Sweet Crumbs. Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- Подключение JavaScript-файла -->
+<script src="script.js"></script>
+</body>
+</html>
